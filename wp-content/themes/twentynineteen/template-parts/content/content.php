@@ -28,17 +28,19 @@
 	<?php twentynineteen_post_thumbnail(); ?>
 
 	<div class="entry-content">
-		<?php
+		<div class="excerpt-home">
+			<?php
 
-		the_excerpt();
+			the_excerpt();
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
+					'after'  => '</div>',
+				)
+			);
+			?>
+		</div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

@@ -1870,6 +1870,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  	font-family: "Libre Franklin", sans-serif;
  }
 
+ol.discussion-avatar-list, .discussion-avatar-list { display: none !important; }
+
  /* Normalize */
  /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1998,6 +2000,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  sup {
  	top: -0.5em;
  }
+
+figcaption {
+	text-align: left !important;
+}
 
 /* Embedded content
 ========================================================================== */
@@ -2266,6 +2272,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  	font-family: 'Overpass', sans-serif;
  	font-weight: 900;
  	font-size: 1.25em;
+ }
+
+ .excerpt-home {
+ 	margin: 0px !important;
  }
 
  .main-navigation,
