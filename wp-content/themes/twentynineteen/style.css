@@ -2268,7 +2268,7 @@ figcaption {
 
  @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@900&display=swap');
 
- h1.site-title {
+ h1.site-title, p.site-title {
  	font-family: 'Overpass', sans-serif;
  	font-weight: 900;
  	font-size: 1.25em;
@@ -4364,24 +4364,17 @@ a:focus {
 	pointer-events: none;
 }
 
-.image-filters-enabled .entry .post-thumbnail:before {
-	background: #0073aa;
-	mix-blend-mode: screen;
-	opacity: 0.1;
-	z-index: 2;
-}
-
 .image-filters-enabled .entry .post-thumbnail:after {
 	background: #0073aa;
-	mix-blend-mode: multiply;
-	opacity: .8;
+	mix-blend-mode: normal;
+	opacity: 0.4;
 	z-index: 3;
 	/* Browsers supporting mix-blend-mode don't need opacity < 1 */
 }
 
 @supports (mix-blend-mode: multiply) {
 	.image-filters-enabled .entry .post-thumbnail:after {
-		opacity: 1;
+		opacity: 0.4;
 	}
 }
 
@@ -4533,6 +4526,14 @@ a:focus {
 .author-bio .author-description .author-link:hover {
 	color: #005177;
 	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+## Newsletter
+--------------------------------------------------------------*/
+.tnp-widget label {
+	font-size: 16px !important;
+	margin-top: 30px;
 }
 
 /*--------------------------------------------------------------

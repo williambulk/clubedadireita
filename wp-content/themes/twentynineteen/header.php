@@ -26,6 +26,8 @@
 
 	  gtag('config', 'UA-161466079-1');
 	</script>
+	<!-- SendPulse -->
+	<script charset="UTF-8" src="//web.webpushs.com/js/push/92273ae61e7adf4120f65d9c0c95c77b_1.js" async></script>
 </head>
 
 <body <?php body_class(); ?>>
