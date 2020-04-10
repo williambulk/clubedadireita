@@ -34,6 +34,29 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
+<?php if ( is_user_logged_in() ) {
+
+} else { ?>
+
+  	<div class="adplace-1">
+		<div class="inner-ad">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- CDD - Header Horizontal -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-6833961077444956"
+			     data-ad-slot="5808783469"
+			     data-ad-format="auto"
+			     data-full-width-responsive="true"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	</div>
+
+<?php } ?>
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
 
