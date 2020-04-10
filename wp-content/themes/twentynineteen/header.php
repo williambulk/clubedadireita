@@ -26,8 +26,16 @@
 
 	  gtag('config', 'UA-161466079-1');
 	</script>
-	<!-- SendPulse -->
-	<script charset="UTF-8" src="//web.webpushs.com/js/push/92273ae61e7adf4120f65d9c0c95c77b_1.js" async></script>
+	<!-- OneSignal -->
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script>
+	  var OneSignal = window.OneSignal || [];
+	  OneSignal.push(function() {
+	    OneSignal.init({
+	      appId: "ca0f60c0-6bf1-46b0-bd8f-835fa00e9554",
+	    });
+	  });
+	</script>
 	<!-- AdSense -->
 	<script data-ad-client="ca-pub-6833961077444956" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
